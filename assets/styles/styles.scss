@@ -1,0 +1,80 @@
+// Colors
+$default: #a1195b;
+$bg: #633458;
+$bg1: #e49a6d;
+$cta: #76bb83;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+$mf: 'Lora', serif;
+$hlf: 'Nunito', sans-serif;
+
+
+body {
+    background-color: $bg;
+    margin: 0;
+    font-family: $mf;
+    font-size: 18px;
+    background-color: #fff;
+    
+
+    &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 18px;
+        top: 0;
+        left: 0;
+        background: $default;
+        background-image:
+            linear-gradient(
+            to right, 
+            $default 25%,
+            $bg1 75%,
+            $bg1 100%
+            );
+    }
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+} 
+
+h1, h2, h3 {
+    color: $bg1;
+}
+
+section {
+    height: 100vh;
+}
+
+nav {
+    ul {
+        display: none;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.start {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 100vh;
+
+    img {
+        height: 200px;
+        position: absolute;
+        top: calc(50% - 100px);
+        left: 70%;
+    }
+    h1 {
+        align-self: flex-end;
+        margin-bottom: 100px;
+    }
+}
